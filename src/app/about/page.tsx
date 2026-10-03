@@ -33,7 +33,7 @@ export default function AboutPage() {
         </h1>
         <div className="mt-8 max-w-xl space-y-5 text-[17px] leading-relaxed text-ink-muted">
           <p>
-            Hi, I'm Ranu. I mainly photograph landscapes with some travel and street moments in-between. 
+            Hi, I&apos;m Ranu. I mainly photograph landscapes with some travel and street moments in-between. 
             Witnessing the unfathomable beauty of this world is often overwhelming, and trying to capture the feeling of being there, watching it all, brings me a kind of peace. 
             I hope these captures can do the same for you.
              
