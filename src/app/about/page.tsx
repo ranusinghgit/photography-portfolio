@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const profileSrc =
-  "https://res.cloudinary.com/demo/image/upload/c_fill,g_face,w_900,h_1200/woman.jpg";
+  "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791015530/IMG_1728.jpg";
 
 export default function AboutPage() {
   return (
@@ -34,8 +34,8 @@ export default function AboutPage() {
         <div className="mt-8 max-w-xl space-y-5 text-[17px] leading-relaxed text-ink-muted">
           <p>
             Hi, I'm Ranu. I mainly photograph landscapes with some travel and street moments in-between. 
-            Witnessing the unfathomable beauty of this world is often overwhelming. And trying to capture the feeling of being there, watching it all, brings a kind of peace. 
-            I hope it these captures can do the same for you.
+            Witnessing the unfathomable beauty of this world is often overwhelming, and trying to capture the feeling of being there, watching it all, brings me a kind of peace. 
+            I hope these captures can do the same for you.
              
           </p>
           <p>
