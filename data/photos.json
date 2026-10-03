@@ -1,0 +1,50 @@
+[
+  {
+   "id": "1",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/e_trim/c_fill,g_center,w_2400,h_1600/v1791010212/Florence.jpg",
+    "title": "Florence",
+    "location": "Florence, Italy",
+    "category": "Travel",
+    "caption": "Duomo at sunset" 
+  },
+  {
+    "id": "2",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791008256/Reinebringen_png.jpg",
+    "title": "Reinebringen",
+    "location": "Lofoten Islands, Norway",
+    "category": "Landscape",
+    "caption": "Golden light over Reinebringen"
+  },
+  {
+    "id": "3",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791010213/Joshua_sunset.jpg",
+    "title": "Joshua sunset",
+    "location": "Joshua Tree National Park, California",
+    "category": "Landscape",
+    "caption": "Joshua tree against a pastel sky"
+  },
+  {
+    "id": "4",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791010213/Kerlingerfjoll.jpg",
+    "title": "Karlingerfjoll",
+    "location": "Highlands, Iceland",
+    "category": "Landscape",
+    "caption": "Infinite steps into the hot springs"
+  },
+  {
+    "id": "5",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791010213/Little_lake.jpg",
+    "title": "Driftwood",
+    "location": "Somewhere in the PNW",
+    "category": "Travel",
+    "caption": "Every alpine lake tells a story"
+  },
+  {
+    "id": "6",
+    "src": "https://res.cloudinary.com/vzxcgb3b/image/upload/v1791010213/Joshua_milkyway.jpg",
+    "title": "Night Sky",
+    "location": "Joshua Tree National Park, California",
+    "category": "Landscape",
+    "caption": "Night sparkles and the lonesome Joshu Tree"
+  }
+]
