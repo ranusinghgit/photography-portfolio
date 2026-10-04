@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "Selected landscape, drone, and travel photographs. An editorial photography portfolio.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,9 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${lexendExa.variable}`}>
-      <body className="min-h-screen font-sans">
+      <body className="min-h-screen max-w-full overflow-x-hidden font-sans">
         <Header />
-        <main>{children}</main>
+        <main className="min-w-0 max-w-full overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>

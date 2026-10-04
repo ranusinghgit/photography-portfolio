@@ -11,24 +11,21 @@ const profileSrc =
 
 export default function AboutPage() {
   return (
-    <article className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-12 md:gap-16 md:px-10 md:py-24">
-      <div className="md:col-span-5">
-        <div className="relative aspect-[3/4] overflow-hidden bg-neutral-100">
+    <article className="mx-auto grid min-w-0 max-w-6xl gap-8 px-4 py-8 sm:px-6 md:grid-cols-12 md:gap-16 md:px-10 md:py-24">
+      <div className="min-w-0 md:col-span-5">
+        <div className="relative mx-auto aspect-[3/4] w-full max-w-[13.5rem] overflow-hidden bg-neutral-100 sm:max-w-[18rem] md:mx-0 md:max-w-none">
           <Image
             src={profileSrc}
             alt="Portrait of the photographer"
             fill
-            sizes="(max-width: 768px) 100vw, 40vw"
+            sizes="(max-width: 768px) 216px, 40vw"
             className="object-cover"
             priority
           />
         </div>
       </div>
       <div className="flex flex-col justify-center md:col-span-7 md:pl-6">
-        <p className="text-xs uppercase tracking-[0.22em] text-ink-faint">
-          About
-        </p>
-        <h1 className="mt-4 text-4xl font-light tracking-tight text-ink md:text-5xl">
+        <h1 className="text-2xl font-light tracking-tight text-ink sm:text-3xl md:text-4xl">
           Trying to capture a feeling.
         </h1>
         <div className="mt-8 max-w-xl space-y-5 text-[17px] leading-relaxed text-ink-muted">

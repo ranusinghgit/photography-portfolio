@@ -8,7 +8,7 @@ type PhotoCardProps = {
 
 export default function PhotoCard({ photo }: PhotoCardProps) {
   return (
-    <article>
+    <article className="min-w-0">
       <Link href={`/photo/${photo.id}`} className="group block">
         <div className="relative aspect-[3/2] overflow-hidden bg-neutral-100">
           <Image

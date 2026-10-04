@@ -34,36 +34,42 @@ export default async function PhotoPage({ params }: PhotoPageProps) {
 
   return (
     <article className="bg-white">
-      <div className="flex justify-center px-6 pb-8 pt-10 md:pt-12">
-        <figure className="w-[70vw] max-w-[70vw] leading-none">
-          <Image
-            src={photo.src}
-            alt={photo.title}
-            width={2400}
-            height={1600}
-            priority
-            sizes="70vw"
-            className="h-auto w-full border-[1.5px] border-neutral-400"
-            style={{ width: "100%", height: "auto" }}
-          />
+      <div className="flex justify-center px-4 pb-16 pt-8 sm:px-6 md:pb-24 md:pt-12">
+        <figure className="w-full max-w-full overflow-hidden border-[1.5px] border-neutral-400 md:w-[70vw] md:max-w-[70vw]">
+          <div className="leading-none">
+            <Image
+              src={photo.src}
+              alt={photo.title}
+              width={2400}
+              height={1600}
+              priority
+              sizes="(max-width: 768px) 100vw, 70vw"
+              className="h-auto w-full"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <figcaption className="border-t border-neutral-400 bg-paper px-5 py-8 sm:px-8 sm:py-10 md:px-10">
+            <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-bronze">
+              {photo.category}
+            </p>
+            <h1 className="mt-3 text-2xl font-light tracking-tight text-ink sm:text-3xl md:text-4xl">
+              {photo.title}
+            </h1>
+            <p className="mt-2 text-sm tracking-wide text-ink-faint">
+              {photo.location}
+            </p>
+            <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-ink-muted">
+              {photo.caption}
+            </p>
+            <Link
+              href="/"
+              className="mt-8 inline-flex items-center gap-2 border-t border-bronze/25 pt-5 text-[11px] uppercase tracking-[0.18em] text-ink transition-colors hover:text-bronze"
+            >
+              <span aria-hidden="true">←</span>
+              Back to gallery
+            </Link>
+          </figcaption>
         </figure>
-      </div>
-      <div className="mx-auto max-w-3xl px-6 pb-16 pt-8 md:px-10 md:pb-20">
-        <h1 className="text-4xl font-light tracking-tight text-ink md:text-5xl">
-          {photo.title}
-        </h1>
-        <p className="mt-4 text-sm tracking-wide text-ink-muted">
-          {photo.location}
-        </p>
-        <p className="mt-8 max-w-xl text-[17px] leading-relaxed text-ink-muted">
-          {photo.caption}
-        </p>
-        <Link
-          href="/"
-          className="mt-12 inline-block text-xs uppercase tracking-[0.18em] text-ink transition-opacity hover:opacity-60"
-        >
-          Back to gallery
-        </Link>
       </div>
     </article>
   );
